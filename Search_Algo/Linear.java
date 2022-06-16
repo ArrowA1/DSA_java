@@ -1,7 +1,7 @@
 package Search_Algo;
 import java.util.*;
 
-class Linear_Search
+class Linear
 {
     /**
      * function to perform linear search
@@ -11,7 +11,7 @@ class Linear_Search
      * @return index of search element, if found
      * else return -1
      */
-    static int linear_srch(int array[], int len, int ele)
+    static int search(int array[], int len, int ele)
     {
         for(int index = 0; index < len; ++index)
             if(array[index] == ele)
@@ -38,7 +38,7 @@ class Linear_Search
         System.out.printf("Search element: ");
         int ele = sc.nextInt();
 
-        int index = linear_srch(array, len, ele);
+        int index = search(array, len, ele);
         if(index != -1)       // element found
             System.out.println(ele + " found at index " + index);
         else
